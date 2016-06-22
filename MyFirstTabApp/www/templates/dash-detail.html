@@ -1,0 +1,40 @@
+<ion-view view-title="<div><span class='header-logo'><img class='title-image' src='img/Ampf.png' alt='App logo'/></span></div>">
+    <!--<ion-nav-back-button class="button-icon button-clear ion-ios7-arrow-left">
+    </ion-nav-back-button>-->
+  <ion-content class="padding">
+  <div collection-repeat="pol in policy"> 
+   <div class="card list">
+    <div class="item item-divider item-calm">
+   	<!--<input type="Lable" ng-model="policy.PolicyNumber"/> ion-ios-folder-outline-->
+   	<h2> <i class="ion-document"></i><font color="Black"> Policy Number : {{pol.PolicyNumber}}</font></h2>    
+   </div>   
+   <div class="item item-text-wrap item-stable">
+    <div class = "row" >
+      <div class = "col col-30"><h3><i class="ion-ios-folder-outline"></i><font color="black"> Policy type</font></h3></div> <div class = "col"><font color="blue">{{pol.PolicyType}}</font></div>
+    </div>
+    <div class = "row">
+ 	    <div class = "col col-30"><h3><i class="ion-ios-email-outline"></i><font color="black"> Email Address</font></h3></div><div class = "col"><font color="blue">{{pol.EmailAddress}}</font></div>
+    </div>
+    <div class = "row">
+ 	    <div class = "col col-30"><h3><i class="ion-ios-location-outline"></i><font color="black"> Rating State</font></h3></div><div class = "col"><font color="blue">{{pol.RatingState}}</font></div>
+    </div> 
+   <!-- <div collection-repeat="polterm in pol.Terms"> -->
+      <div class="item item-divider"><i class="ion-calculator"></i> Policy Terms :</div>    
+     <div class = "row" >
+      <div class = "col col-50"><h3><i class="ion-social-usd-outline"></i><font color="black"> Payment Plan</font></h3></div> <div class = "col"><font color="blue">{{pol.Terms[0].BillPlanPaymentPlan}}</font></div>
+     </div>
+     <div class = "row">
+      <div class = "col col-50"><h3><i class="ion-ios-star-outline"></i><font color="black"> Status</font></h3></div><div class = "col"><font color="blue">{{pol.Terms[0].Status}}</font></div>
+     </div>
+     <div class = "row">
+      <div class = "col col-50"><h3><i class="ion-ios-calendar-outline"></i><font color="black"> Effective Date</font></h3></div><div class = "col"><font color="blue">{{pol.Terms[0].EffectiveDate}}</font></div>
+     </div> 
+      <div class = "row">
+      <div class = "col col-50"><h3><i class="ion-ios-calendar"></i><font color="black"> Expiration Date</font></h3></div><div class = "col"><font color="blue">{{pol.Terms[0].ExpirationDate}}</font></div>
+     </div> 
+   </div>
+    <!--</div>-->
+  </div>
+</div>
+  </ion-content>
+</ion-view>

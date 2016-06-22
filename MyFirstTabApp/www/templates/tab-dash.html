@@ -1,0 +1,24 @@
+<ion-view> <!-- view-title="<img class='title-image' src='img/Ampf.png'></img>" left-buttons="leftButtons" right-buttons="rightButtons" hide-back-button="true" class="bubble-background">-->
+  <!--<ion-header-bar align-title="left">
+   <img class="title-image" src="img/Ampf.png"></img>
+   <a class="title header-text">Quick App</a>
+  </ion-header-bar>-->
+  <ion-nav-title>
+    <div>
+        <span class="header-logo"><img class="title-image" src="img/Ampf.png" alt="App logo"/></span>      
+    </div>
+ </ion-nav-title>
+   <ion-content class="padding">
+    <form>
+      <div class="list list-inset">
+          <label class="item item-input">
+              <input type="text" placeholder="Policy" ng-model="example.polnum">
+          </label>
+          <label class="item item-input">
+              <input type="text" placeholder="ZipCode" ng-model="example.zip">
+          </label>
+      </div>
+      <button class="button button-block button-positive" ng-click="login()">Login</button>
+      </form>  
+  </ion-content>  
+</ion-view>
